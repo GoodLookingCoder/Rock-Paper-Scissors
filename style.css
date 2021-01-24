@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 80%;
+	margin: auto;
+	background: #1f1f30;
+	color: white;
+}
+
+header{
+	margin-top: 20px;
+	display:flex;
+	justify-content: space-between;
+}
+
+strong{
+	font-size: 23px;
+
+}
+
+#playerCounter{
+	margin-top:  5px;
+	font-size: 20px;
+}
+
+#computerCounter{
+	margin-top:  5px;
+	font-size: 20px;
+}
+
+#player{
+	flex-basis: 50px; 
+	margin-left: 110px; 
+	text-align: center;;
+}
+
+#computer{
+	flex-basis: 50px;
+	margin-right: 110px;
+	text-align: center;
+}
+
+section{
+	margin-top: 100px;
+	text-align: center; 
+}
+
+h1{
+	margin-bottom: 10px;
+	font-size: 45px
+}
+
+.secondH1{
+	margin-bottom: 130px;
+}
+
+h4{
+	margin-bottom: 120px;
+}
+
+button{
+	background: darkgreen;
+	color: white;
+	padding: 7px 20px ;
+	border-style: none;
+	border-radius: 5px;
+	margin: 0 30px	
+}
+
+.esfumasion{
+	display: none;
+}
+
+#paperButton{
+	position: relative;
+	top: -10px;
+}
+
+.images-container{
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: auto;
+
+	position: relative;
+	bottom: 80px;
+	
+}
+
+img{
+	width: 170px;
+}
+
+#img1{
+	transform: scaleX(-1);
+}
+
+.buttons-container{
+	text-align: center;
+}
+
+
+.animame1{
+	animation-name: goAway;
+	animation-duration: 1s;
+}
+
+@keyframes goAway{
+	0%{
+		opacity: 1;
+	}
+
+	100%{
+		opacity: 0;
+	}
+}
+
+.apear{
+	animation-name: goIn;
+	animation-duration: 2s;
+}
+
+@keyframes goIn{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+.goAnimation{
+	position: relative;
+	animation-name: test;
+	animation-duration: 1s;
+}
+
+
+@keyframes test{
+	0%{
+		top: 0px;
+	}
+	20%{
+		top: 30px;
+	}
+	40%{
+		top: -30px;
+	}
+	60%{
+		top: 30px;
+	}
+	80%{
+		top:-30px;
+	}
+	100%{
+		top: 0px;
+	}
+
+}
